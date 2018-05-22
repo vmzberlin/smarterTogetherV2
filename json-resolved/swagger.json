@@ -171,6 +171,9 @@
           "items" : {
             "$ref" : "#/definitions/LamppostStationConnectedSensor"
           }
+        },
+        "properties" : {
+          "$ref" : "#/definitions/LamppostStationConnectedSensorProperties"
         }
       },
       "example" : {
@@ -198,7 +201,14 @@
             "measurementTypes" : [ "measurementTypes", "measurementTypes" ],
             "type" : "type"
           }
-        } ]
+        } ],
+        "properties" : {
+          "fixture" : "fixture",
+          "wifi" : true,
+          "provider" : "provider",
+          "measurementTypes" : [ "measurementTypes", "measurementTypes" ],
+          "type" : "type"
+        }
       }
     },
     "PointLocation" : {
