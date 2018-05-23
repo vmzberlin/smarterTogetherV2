@@ -46,7 +46,7 @@
           }
         },
         "security" : [ {
-          "application" : [ "scope:ReadLamppost" ]
+          "application" : [ "ReadLampposts" ]
         } ]
       }
     },
@@ -76,7 +76,7 @@
           }
         },
         "security" : [ {
-          "application" : [ "scope:ReadLamppost" ]
+          "application" : [ "ReadLampposts" ]
         } ]
       }
     },
@@ -134,7 +134,7 @@
           }
         },
         "security" : [ {
-          "application" : [ "scope:ReadLamppostValues" ]
+          "application" : [ "ReadLamppostMeasurements" ]
         } ]
       }
     }
@@ -145,9 +145,9 @@
       "tokenUrl" : "https://sso2.vmz.services/auth/realms/SmarterTogether/protocol/openid-connect/token",
       "flow" : "application",
       "scopes" : {
-        "scope:ReadLamppost" : "read lampposts data",
+        "ReadLampposts" : "read lampposts ",
         "smarterTogether" : "connect to smarterTogether API",
-        "scope:ReadLamppostValues" : "read lamppost values"
+        "ReadLamppostMeasurements" : "read lamppost mMeasurements"
       }
     }
   },
