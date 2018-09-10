@@ -14,7 +14,8 @@ case class LamppostStation (
   id: String,
   location: PointLocation,
   name: Option[String],
-  connectedSensors: Option[Seq[LamppostStationConnectedSensor]]
+  connectedSensors: Option[Seq[LamppostStationConnectedSensor]],
+  properties: Option[LamppostStationConnectedSensorProperties]
 ) extends ApiModel
 
 

@@ -12,7 +12,7 @@ import java.util.UUID
 
 case class LamppostStationConnectedSensor (
   connectedSensorId: String,
-  properties: Option[Seq[ERRORUNKNOWN]]
+  properties: Option[LamppostStationConnectedSensorProperties]
 ) extends ApiModel
 
 

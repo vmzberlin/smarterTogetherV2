@@ -5,6 +5,7 @@
  */
 package io.swagger.client.api
 
+import io.swagger.client.model.ERRORUNKNOWN
 import io.swagger.client.model.LamppostStation
 import io.swagger.client.model.LamppostStationConnectedSensorMeasuredValue
 import io.swagger.client.core._
@@ -16,7 +17,7 @@ object DefaultApi {
   /**
    * 
    * Expected answers:
-   *   code 200 :  (OK)
+   *   code 200 : ERRORUNKNOWN (OK)
    *   code 204 :  (NO CONTENT)
    *   code 404 :  (NOT FOUND CONTENT)
    * 
@@ -24,12 +25,12 @@ object DefaultApi {
    * @param lng lng
    * @param radius radius
    */
-  def lamppostsGet(lat: Option[Double] = None, lng: Option[Double] = None, radius: Option[Double] = None): ApiRequest[Unit] =
-    ApiRequest[Unit](ApiMethods.GET, "https://api.smartdataplatform.info", "/lampposts", "application/json")
+  def lamppostsGet(lat: Option[Double] = None, lng: Option[Double] = None, radius: Option[Double] = None): ApiRequest[ERRORUNKNOWN] =
+    ApiRequest[ERRORUNKNOWN](ApiMethods.GET, "https://api.smartdataplatform.info", "/lampposts", "application/json")
       .withQueryParam("lat", lat)
       .withQueryParam("lng", lng)
       .withQueryParam("radius", radius)
-      .withSuccessResponse[Unit](200)
+      .withSuccessResponse[ERRORUNKNOWN](200)
       .withErrorResponse[Unit](204)
       .withErrorResponse[Unit](404)
         /**

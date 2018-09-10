@@ -32,9 +32,9 @@ object LamppostStationConnectedSensorMeasuredValueEnums {
 
   type Interval = Interval.Value
   object Interval extends Enumeration {
-    val Hour = Value("hour")
-    val Month = Value("month")
-    val Day = Value("day")
+    val Hourly = Value("hourly")
+    val Monthly = Value("monthly")
+    val Dayly = Value("dayly")
   }
 
 }

@@ -10,17 +10,12 @@ import io.swagger.client.core.ApiModel
 import org.joda.time.DateTime
 import java.util.UUID
 
-case class PointLocation (
-  `type`: PointLocationEnums.`Type`,
-  coordinates: Any
+case class LamppostStationConnectedSensorProperties (
+  `type`: Option[String],
+  provider: Option[String],
+  fixture: Option[String],
+  measurementTypes: Option[Seq[String]],
+  wifi: Option[Boolean]
 ) extends ApiModel
 
-object PointLocationEnums {
-
-  type `Type` = `Type`.Value
-  object `Type` extends Enumeration {
-    val Point = Value("Point")
-  }
-
-}
 
