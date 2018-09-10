@@ -1,8 +1,8 @@
 {
   "swagger" : "2.0",
   "info" : {
-    "description" : "This is the API of the Smart Data Platform Munich in the EU project Smarter Together",
-    "version" : "2.0.0",
+    "description" : "This is the API of the Smart Data Platform Munich in the EU project Smarter Together.If you want to access one of the APIs listed below, please get in contact with smarter-together@muenchen.de to get further information about the conditions and next steps.",
+    "version" : "2.0.1",
     "title" : "Smarter Together API"
   },
   "host" : "api.smartdataplatform.info",
@@ -36,7 +36,8 @@
         } ],
         "responses" : {
           "200" : {
-            "description" : "OK"
+            "description" : "OK",
+            "schema" : { }
           },
           "204" : {
             "description" : "NO CONTENT"
@@ -147,7 +148,7 @@
       "scopes" : {
         "ReadLampposts" : "read lampposts ",
         "smarterTogether" : "connect to smarterTogether API",
-        "ReadLamppostMeasurements" : "read lamppost mMeasurements"
+        "ReadLamppostMeasurements" : "read lamppost Measurements"
       }
     }
   },
